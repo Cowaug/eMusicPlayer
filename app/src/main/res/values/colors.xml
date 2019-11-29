@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--LIGHT(non-0) AND DARK(have-0) THEME-->
+    <color name="red">#D32F2F</color>
+    <color name="pink">#C2185B</color>
+    <color name="purple">#7B1FA2</color>
+    <color name="deep_purple">#512DA8</color>
+    <color name="indigo">#303F9F</color>
+    <color name="blue">#1976D2</color>
+    <color name="light_blue">#0288D1</color>
+    <color name="cyan">#0097A7</color>
+    <color name="teal">#00796B</color>
+    <color name="green">#388E3C</color>
+    <color name="light_green">#689F38</color>
+    <color name="lime">#AFB42B</color>
+    <color name="yellow">#FBC02D</color>
+    <color name="amber">#FFA000</color>
+    <color name="orange">#F57C00</color>
+    <color name="deep_orange">#E64A19</color>
+    <color name="brown">#5D4037</color>
+    <color name="grey">#616161</color>
+    <color name="blue_grey">#455A64</color>
+    <color name="red0">#F44336</color>
+    <color name="pink0">#E91E63</color>
+    <color name="purple0">#9C27B0</color>
+    <color name="deep_purple0">#673AB7</color>
+    <color name="indigo0">#3F51B5</color>
+    <color name="blue0">#2196F3</color>
+    <color name="light_blue0">#03A9F4</color>
+    <color name="cyan0">#00BCD4</color>
+    <color name="teal0">#009688</color>
+    <color name="green0">#4CAF50</color>
+    <color name="light_green0">#8BC34A</color>
+    <color name="lime0">#CDDC39</color>
+    <color name="yellow0">#FFEE58</color>
+    <color name="amber0">#FFC107</color>
+    <color name="orange0">#FF9800</color>
+    <color name="deep_orange0">#FF5722</color>
+    <color name="brown0">#795548</color>
+    <color name="grey0">#9E9E9E</color>
+    <color name="blue_grey0">#607D8B</color>
+
+   <!--OTHER-->
+    <color name="white">#FFFFFF</color>
+    <color name="whiteTransparent">#EFFFFFFF</color>
+    <color name="whiteHint">#6FFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackHint">#6F000000</color>
+    <color name="darkThemeBackground">#303030</color>
+    <color name="darkThemeBackgroundTransparent">#EF303030</color>
+    <color name="half_transparent">#10000000</color>
+
+    <!--TRANSPARENT-->
+    <color name="redT">#7f1b1b</color>
+    <color name="pinkT">#740e36</color>
+    <color name="purpleT">#491261</color>
+    <color name="deep_purpleT">#301b64</color>
+    <color name="indigoT">#1c255f</color>
+    <color name="blueT">#0f467d</color>
+    <color name="light_blueT">#01517d</color>
+    <color name="cyanT">#005a64</color>
+    <color name="tealT">#004840</color>
+    <color name="greenT">#215524</color>
+    <color name="light_greenT">#3e5f21</color>
+    <color name="limeT">#696c19</color>
+    <color name="yellowT">#ae7d03</color>
+    <color name="amberT">#996000</color>
+    <color name="orangeT">#934a00</color>
+    <color name="deep_orangeT">#8a2c0f</color>
+    <color name="brownT">#372620</color>
+    <color name="greyT">#3a3a3a</color>
+    <color name="blue_greyT">#29363c</color>
+
+    <color name="red0T">#a91409</color>
+    <color name="pink0T">#8f0e3a</color>
+    <color name="purple0T">#5d1769</color>
+    <color name="deep_purple0T">#3d226d</color>
+    <color name="indigo0T">#25306c</color>
+    <color name="blue0T">#085b9d</color>
+    <color name="light_blue0T">#016592</color>
+    <color name="cyan0T">#00707f</color>
+    <color name="teal0T">#005A51</color>
+    <color name="green0T">#2d6930</color>
+    <color name="light_green0T">#537928</color>
+    <color name="lime0T">#828d18</color>
+    <color name="yellow0T">#cdb800</color>
+    <color name="amber0T">#9d7500</color>
+    <color name="orange0T">#995b00</color>
+    <color name="deep_orange0T">#AD2900</color>
+    <color name="brown0T">#48322b</color>
+    <color name="grey0T">#5e5e5e</color>
+    <color name="blue_grey0T">#394a53</color>
+</resources>

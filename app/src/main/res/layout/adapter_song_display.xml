@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/solid_isSelected"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.3"
+        android:background="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/solid_isPlaying"
+        android:layout_width="8dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_firstLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:singleLine="true"
+        android:text="1st line"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_secondLine"
+        app:layout_constraintEnd_toStartOf="@+id/image_isLoved"
+        app:layout_constraintStart_toEndOf="@+id/image_SongArtwork"
+        app:layout_constraintTop_toTopOf="@+id/image_SongArtwork"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/text_secondLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:singleLine="true"
+        android:text="2nd line"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_SongArtwork"
+        app:layout_constraintEnd_toEndOf="@+id/text_firstLine"
+        app:layout_constraintStart_toStartOf="@+id/text_firstLine"
+        app:layout_constraintTop_toBottomOf="@+id/text_firstLine" />
+
+    <ImageView
+        android:id="@+id/image_isLoved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/avd_heart_break"
+        android:backgroundTint="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/solid_isPlaying"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_bottombar"
+        android:layout_width="0dp"
+        android:layout_height="0.1dp"
+        android:alpha="0.1"
+        android:background="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/solid_isSelected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_topbar"
+        android:layout_width="0dp"
+        android:layout_height="0.1dp"
+        android:alpha="0.1"
+        android:background="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_SongArtwork"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        android:tint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/solid_isSelected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/solid_isSelected" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_Touch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/solid_isSelected"
+        app:layout_constraintEnd_toEndOf="@+id/solid_isSelected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/solid_isSelected">
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

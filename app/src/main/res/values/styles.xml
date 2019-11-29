@@ -1,0 +1,641 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/red0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:colorControlHighlight">?attr/colorAccent</item>
+    </style>
+
+    <!-- Default theme -->
+    <style name="DefaultTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/darkThemeBackground</item>
+        <item name="android:navigationBarColor">@color/darkThemeBackground</item>
+    </style>
+
+    <!-- Base Dark theme -->
+    <style name="DarkTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:colorControlHighlight">?attr/colorAccent</item>
+    </style>
+
+    <!-- DARK THEME -->
+    <style name="Red" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/red0T</item>
+        <item name="android:navigationBarColor">@color/red0T</item>
+        <item name="colorAccent">@color/red0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Pink" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/pink0T</item>
+        <item name="android:navigationBarColor">@color/pink0T</item>
+        <item name="colorAccent">@color/pink0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Purple" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/purple0T</item>
+        <item name="android:navigationBarColor">@color/purple0T</item>
+        <item name="colorAccent">@color/purple0</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="DeepPurple" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/deep_purple0T</item>
+        <item name="android:navigationBarColor">@color/deep_purple0T</item>
+        <item name="colorAccent">@color/deep_purple0</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="Indigo" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/indigo0T</item>
+        <item name="android:navigationBarColor">@color/indigo0T</item>
+        <item name="colorAccent">@color/indigo0</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="Blue" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/blue0T</item>
+        <item name="android:navigationBarColor">@color/blue0T</item>
+        <item name="colorAccent">@color/blue0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="LightBlue" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/light_blue0T</item>
+        <item name="android:navigationBarColor">@color/light_blue0T</item>
+        <item name="colorAccent">@color/light_blue0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Cyan" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/cyan0T</item>
+        <item name="android:navigationBarColor">@color/cyan0T</item>
+        <item name="colorAccent">@color/cyan0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Teal" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/teal0T</item>
+        <item name="android:navigationBarColor">@color/teal0T</item>
+        <item name="colorAccent">@color/teal0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Green" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/green0T</item>
+        <item name="android:navigationBarColor">@color/green0T</item>
+        <item name="colorAccent">@color/green0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="LightGreen" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/light_green0T</item>
+        <item name="android:navigationBarColor">@color/light_green0T</item>
+        <item name="colorAccent">@color/light_green0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Lime" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/lime0T</item>
+        <item name="android:navigationBarColor">@color/lime0T</item>
+        <item name="colorAccent">@color/lime0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Yellow" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/yellow0T</item>
+        <item name="android:navigationBarColor">@color/yellow0T</item>
+        <item name="colorAccent">@color/yellow0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Amber" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/amber0T</item>
+        <item name="android:navigationBarColor">@color/amber0T</item>
+        <item name="colorAccent">@color/amber0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Orange" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/orange0T</item>
+        <item name="android:navigationBarColor">@color/orange0T</item>
+        <item name="colorAccent">@color/orange0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="DeepOrange" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/deep_orange0T</item>
+        <item name="android:navigationBarColor">@color/deep_orange0T</item>
+        <item name="colorAccent">@color/deep_orange0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="Brown" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/brown0T</item>
+        <item name="android:navigationBarColor">@color/brown0T</item>
+        <item name="colorAccent">@color/brown0</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="Grey" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/grey0T</item>
+        <item name="android:navigationBarColor">@color/grey0T</item>
+        <item name="colorAccent">@color/grey0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="BlueGrey" parent="DarkTheme">
+        <item name="android:statusBarColor">@color/blue_grey0T</item>
+        <item name="android:navigationBarColor">@color/blue_grey0T</item>
+        <item name="colorAccent">@color/blue_grey0</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <!-- Base Light theme -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:colorControlHighlight">?attr/colorAccent</item>
+    </style>
+    <!-- LIGHT THEME-->
+    <style name="RedL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/redT</item>
+        <item name="android:navigationBarColor">@color/redT</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="PinkL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/pinkT</item>
+        <item name="android:navigationBarColor">@color/pinkT</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="PurpleL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/purpleT</item>
+        <item name="android:navigationBarColor">@color/purpleT</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="DeepPurpleL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/deep_purpleT</item>
+        <item name="android:navigationBarColor">@color/deep_purpleT</item>
+        <item name="colorAccent">@color/deep_purple</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="IndigoL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/indigoT</item>
+        <item name="android:navigationBarColor">@color/indigoT</item>
+        <item name="colorAccent">@color/indigo</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="BlueL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/blueT</item>
+        <item name="android:navigationBarColor">@color/blueT</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="LightBlueL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/light_blueT</item>
+        <item name="android:navigationBarColor">@color/light_blueT</item>
+        <item name="colorAccent">@color/light_blue</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="CyanL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/cyanT</item>
+        <item name="android:navigationBarColor">@color/cyanT</item>
+        <item name="colorAccent">@color/cyan</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="TealL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/tealT</item>
+        <item name="android:navigationBarColor">@color/tealT</item>
+        <item name="colorAccent">@color/teal</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="GreenL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/greenT</item>
+        <item name="android:navigationBarColor">@color/greenT</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="LightGreenL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/light_greenT</item>
+        <item name="android:navigationBarColor">@color/light_greenT</item>
+        <item name="colorAccent">@color/light_green</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="LimeL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/limeT</item>
+        <item name="android:navigationBarColor">@color/limeT</item>
+        <item name="colorAccent">@color/lime</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="YellowL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/yellowT</item>
+        <item name="android:navigationBarColor">@color/yellowT</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="AmberL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/amberT</item>
+        <item name="android:navigationBarColor">@color/amberT</item>
+        <item name="colorAccent">@color/amber</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="OrangeL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/orangeT</item>
+        <item name="android:navigationBarColor">@color/orangeT</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="DeepOrangeL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/deep_orangeT</item>
+        <item name="android:navigationBarColor">@color/deep_orangeT</item>
+        <item name="colorAccent">@color/deep_orange</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:progressTint">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="BrownL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/brownT</item>
+        <item name="android:navigationBarColor">@color/brownT</item>
+        <item name="colorAccent">@color/brown</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="GreyL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/greyT</item>
+        <item name="android:navigationBarColor">@color/greyT</item>
+        <item name="colorAccent">@color/grey</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+    <style name="BlueGreyL" parent="LightTheme">
+        <item name="android:statusBarColor">@color/blue_greyT</item>
+        <item name="android:navigationBarColor">@color/blue_greyT</item>
+        <item name="colorAccent">@color/blue_grey</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="23" tools:ignore="DuplicateDefinition">
+            ?attr/colorAccent
+        </item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".GUI.GUI_SongDetails">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/solid_headerSongDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/solid_footerSongDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_Details"
+        app:layout_constraintVertical_bias="0.148">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_Details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_ExitEditSongDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_SongDetailsArtwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:scaleType="center"
+                    android:src="@drawable/avd_heart_fill"
+                    android:tint="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_Location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Loading..."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_SongDetailsArtwork" />
+
+                <TextView
+                    android:id="@+id/text_SongDetailsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_Location" />
+
+                <TextView
+                    android:id="@+id/text_SongDetailsArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Artist"
+                    app:layout_constraintStart_toStartOf="@+id/text_SongDetailsTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_SongDetailsTitle" />
+
+                <TextView
+                    android:id="@+id/text_SongDetailsAlbum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Album"
+                    app:layout_constraintStart_toStartOf="@+id/text_SongDetailsTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_SongDetailsArtist" />
+
+                <TextView
+                    android:id="@+id/text_SongDetailsLyric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Lyric"
+                    app:layout_constraintStart_toStartOf="@+id/text_SongDetailsTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_SongDetailsAlbum" />
+
+                <ImageButton
+                    android:id="@+id/button_EditTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="OnButtonClick"
+                    android:src="@drawable/ic_create_black_24dp"
+                    android:tint="?android:attr/textColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText_SongDetailsTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/editText_SongDetailsTitle" />
+
+                <ImageButton
+                    android:id="@+id/button_EditArtwork"
+                    android:layout_width="@dimen/iconSizeNormal"
+                    android:layout_height="@dimen/iconSizeNormal"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_rectangle"
+                    android:backgroundTint="?attr/colorBackgroundFloating"
+                    android:onClick="OnButtonClick"
+                    android:src="@drawable/ic_create_black_24dp"
+                    android:tint="?android:attr/textColor"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_SongDetailsArtwork"
+                    app:layout_constraintEnd_toEndOf="@+id/image_SongDetailsArtwork" />
+
+                <ImageButton
+                    android:id="@+id/button_EditArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="OnButtonClick"
+                    android:src="@drawable/ic_create_black_24dp"
+                    android:tint="?android:attr/textColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText_SongDetailsArtist"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/editText_SongDetailsArtist" />
+
+                <ImageButton
+                    android:id="@+id/button_EditAlbum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="OnButtonClick"
+                    android:src="@drawable/ic_create_black_24dp"
+                    android:tint="?android:attr/textColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText_SongDetailsAlbum"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/editText_SongDetailsAlbum" />
+
+                <ImageButton
+                    android:id="@+id/button_EditLyric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="OnButtonClick"
+                    android:src="@drawable/ic_create_black_24dp"
+                    android:tint="?android:attr/textColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/editText_SongDetailsLyric" />
+
+                <EditText
+                    android:id="@+id/editText_SongDetailsTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Loading..."
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColor"
+                    app:layout_constraintEnd_toStartOf="@+id/button_EditTitle"
+                    app:layout_constraintStart_toStartOf="@+id/text_SongDetailsTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/text_SongDetailsTitle" />
+
+                <EditText
+                    android:id="@+id/editText_SongDetailsArtist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Loading..."
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColor"
+                    app:layout_constraintEnd_toStartOf="@+id/button_EditArtist"
+                    app:layout_constraintStart_toStartOf="@+id/text_SongDetailsArtist"
+                    app:layout_constraintTop_toBottomOf="@+id/text_SongDetailsArtist" />
+
+                <EditText
+                    android:id="@+id/editText_SongDetailsAlbum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Loading..."
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColor"
+                    app:layout_constraintEnd_toStartOf="@+id/button_EditAlbum"
+                    app:layout_constraintStart_toStartOf="@+id/text_SongDetailsAlbum"
+                    app:layout_constraintTop_toBottomOf="@+id/text_SongDetailsAlbum" />
+
+                <EditText
+                    android:id="@+id/editText_SongDetailsLyric"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Loading..."
+                    android:inputType="textMultiLine|textPersonName"
+                    android:textColor="?android:attr/textColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_EditLyric"
+                    app:layout_constraintStart_toStartOf="@+id/text_SongDetailsLyric"
+                    app:layout_constraintTop_toBottomOf="@+id/text_SongDetailsLyric" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/button_ExitEditSongDetails"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="OnButtonClick"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_RevertEditSongDetails"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_RevertEditSongDetails"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="OnButtonClick"
+        android:src="@drawable/ic_restore_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/button_ExitEditSongDetails"
+        app:layout_constraintEnd_toStartOf="@+id/button_DoneEditSongDetails"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_ExitEditSongDetails"
+        app:layout_constraintTop_toTopOf="@+id/button_ExitEditSongDetails" />
+
+    <ImageButton
+        android:id="@+id/button_DoneEditSongDetails"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="OnButtonClick"
+        android:src="@drawable/ic_done_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/button_ExitEditSongDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_RevertEditSongDetails"
+        app:layout_constraintTop_toTopOf="@+id/button_ExitEditSongDetails" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_info_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/solid_headerSongDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="SONG DETAILS"
+        android:textColor="?android:attr/tint"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+</android.support.constraint.ConstraintLayout>

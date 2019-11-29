@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".GUI.GUI_Playlist">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/solid_headerPlaylist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/list_Playlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/solid_footerPlaylist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_Playlist">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/icon_Playlist"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:tint="?android:attr/tint"
+        android:transitionName="@string/shareSettingIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_playlist_add_check_black_24dp" />
+
+    <TextView
+        android:id="@+id/text_SizeOfPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Total song"
+        android:textColor="?android:attr/tint"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_PlaylistName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText_PlaylistName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Nothing to show here :("
+        app:layout_constraintBottom_toBottomOf="@+id/list_Playlist"
+        app:layout_constraintEnd_toEndOf="@+id/list_Playlist"
+        app:layout_constraintStart_toStartOf="@+id/list_Playlist"
+        app:layout_constraintTop_toTopOf="@+id/list_Playlist" />
+
+    <TextView
+        android:id="@+id/text_HintPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Showing all songs"
+        android:textColor="?android:attr/tint"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button_ExitPlaylist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="PLAYLIST"
+        android:textColor="?android:attr/tint"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_Playlist" />
+
+    <EditText
+        android:id="@+id/editText_PlaylistName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="?android:attr/tint"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="?android:attr/tint"
+        app:layout_constraintEnd_toStartOf="@+id/text_SizeOfPlaylist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ListView
+        android:id="@+id/list_Playlist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_HintPlaylist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_PlaylistName" />
+
+    <ImageButton
+        android:id="@+id/button_ExitPlaylist"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:onClick="OnButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_PreviewPlaylist"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/button_SavePlaylist"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:onClick="OnButtonClick"
+        app:layout_constraintBottom_toBottomOf="@+id/button_ExitPlaylist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_DeletePlaylist"
+        app:layout_constraintTop_toTopOf="@+id/button_ExitPlaylist"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_done_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/button_PreviewPlaylist"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:onClick="OnButtonClick"
+        app:layout_constraintBottom_toBottomOf="@+id/button_ExitPlaylist"
+        app:layout_constraintEnd_toStartOf="@+id/button_DeletePlaylist"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_ExitPlaylist"
+        app:layout_constraintTop_toTopOf="@+id/button_ExitPlaylist"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_list_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/button_DeletePlaylist"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:onClick="OnButtonClick"
+        app:layout_constraintBottom_toBottomOf="@+id/button_ExitPlaylist"
+        app:layout_constraintEnd_toStartOf="@+id/button_SavePlaylist"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_PreviewPlaylist"
+        app:layout_constraintTop_toTopOf="@+id/button_ExitPlaylist"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_delete_sweep_black_24dp" />
+</android.support.constraint.ConstraintLayout>

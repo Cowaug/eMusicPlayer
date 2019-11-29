@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gui_Library"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    tools:context=".GUI.GUI_Library">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/soild_headerLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/colorAccent"
+        android:elevation="0dp"
+        android:transitionName="@string/shareHeader"
+        app:layout_constraintBottom_toTopOf="@+id/list_Library"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/soild_footerLibrary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorAccent"
+        android:elevation="0dp"
+        android:transitionName="@string/shareFooter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_Library"
+        app:layout_constraintVertical_bias="0.578">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_text_SongTitle_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_text_SongArtist_2"
+        app:layout_constraintEnd_toStartOf="@+id/button_PreviousSong_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/text_SongTitle_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:onClick="OnButtonClick"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="No song selected"
+            android:textColor="?android:attr/tint"
+            android:textSize="18sp"
+            android:transitionName="@string/shareTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_text_SongArtist_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/layout_text_SongTitle_2"
+        app:layout_constraintStart_toStartOf="@+id/layout_text_SongTitle_2">
+
+        <TextView
+            android:id="@+id/text_SongArtist_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:onClick="OnButtonClick"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Select a song to play"
+            android:textColor="?android:attr/tint"
+            android:transitionName="@string/shareArtist"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_Search"
+        app:layout_constraintEnd_toStartOf="@+id/button_Search"
+        app:layout_constraintStart_toStartOf="@+id/spinner_ViewOption"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_ViewOption">
+
+        <TextView
+            android:id="@+id/text_Details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Text detail"
+            android:textColor="?android:attr/tint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_OpenMediaPlayer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:onClick="OnButtonClick"
+        android:textColor="@android:color/transparent"
+        android:textColorHighlight="@android:color/transparent"
+        android:textColorHint="@android:color/transparent"
+        android:textCursorDrawable="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_text_SongArtist_2"
+        app:layout_constraintEnd_toEndOf="@id/layout_text_SongTitle_2"
+        app:layout_constraintStart_toStartOf="@+id/layout_text_SongTitle_2"
+        app:layout_constraintTop_toTopOf="@+id/layout_text_SongTitle_2" />
+
+    <TextView
+        android:id="@+id/text_LibraryStatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.75"
+        android:elevation="0dp"
+        android:enabled="false"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Scanning media..."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/list_Library"
+        app:layout_constraintEnd_toEndOf="@+id/list_Library"
+        app:layout_constraintStart_toStartOf="@+id/list_Library"
+        app:layout_constraintTop_toTopOf="@+id/list_Library" />
+
+    <ImageButton
+        android:id="@+id/button_PreviousSong_2"
+        android:layout_width="@dimen/iconSizeNormal"
+        android:layout_height="@dimen/iconSizeNormal"
+        android:layout_marginEnd="8dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:elevation="0dp"
+        android:onClick="OnButtonClick"
+        android:tint="?android:attr/tint"
+        android:transitionName="@string/sharePreviousButton"
+        app:layout_constraintBottom_toBottomOf="@+id/button_Play_Pause_2"
+        app:layout_constraintEnd_toStartOf="@+id/button_Play_Pause_2"
+        app:srcCompat="@drawable/avd_previous"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/button_Play_Pause_2"
+        android:layout_width="@dimen/iconSizeNormal"
+        android:layout_height="@dimen/iconSizeNormal"
+        android:layout_marginEnd="8dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:elevation="0dp"
+        android:onClick="OnButtonClick"
+        android:tint="?android:attr/tint"
+        android:transitionName="@string/sharePlayButton"
+        app:layout_constraintBottom_toBottomOf="@+id/button_NextSong_2"
+        app:layout_constraintEnd_toStartOf="@+id/button_NextSong_2"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/button_NextSong_2"
+        android:layout_width="@dimen/iconSizeNormal"
+        android:layout_height="@dimen/iconSizeNormal"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:elevation="0dp"
+        android:onClick="OnButtonClick"
+        android:tint="?android:attr/tint"
+        android:transitionName="@string/shareNextButton"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_text_SongArtist_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_text_SongTitle_2"
+        app:srcCompat="@drawable/avd_next"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/button_Search"
+        android:layout_width="@dimen/iconSizeNormal"
+        android:layout_height="@dimen/iconSizeNormal"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:elevation="0dp"
+        android:onClick="OnButtonClick"
+        app:layout_constraintEnd_toStartOf="@+id/button_Setting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/button_Setting"
+        android:layout_width="@dimen/iconSizeNormal"
+        android:layout_height="@dimen/iconSizeNormal"
+        android:layout_marginEnd="16dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:elevation="0dp"
+        android:onClick="OnButtonClick"
+        android:tint="?android:attr/tint"
+        android:transitionName="@string/shareSettingIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_Search"
+        app:srcCompat="@drawable/ic_palette_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_FAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:onClick="OnButtonClick"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/layout_Menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_sync_black_24dp" />
+
+    <Spinner
+        android:id="@+id/spinner_ViewOption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_Search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_Search"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ListView
+        android:id="@+id/list_Library"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:elevation="0dp"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:filterTouchesWhenObscured="true"
+        android:visibility="visible"
+        android:cacheColorHint="@android:color/transparent"
+        android:persistentDrawingCache="scrolling"
+        android:scrollingCache="false"
+        app:layout_constraintBottom_toTopOf="@+id/layout_Menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Search" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_Menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorAccent"
+        android:clickable="true"
+        android:elevation="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_AddToQueue"
+            android:layout_width="@dimen/iconSizeNormal"
+            android:layout_height="@dimen/iconSizeNormal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:onClick="OnButtonClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_Add"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_queue_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/button_Add"
+            android:layout_width="@dimen/iconSizeNormal"
+            android:layout_height="@dimen/iconSizeNormal"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:onClick="OnButtonClick"
+            app:layout_constraintBottom_toBottomOf="@+id/button_AddToQueue"
+            app:layout_constraintEnd_toStartOf="@+id/button_Delete"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_AddToQueue"
+            app:layout_constraintTop_toTopOf="@+id/button_AddToQueue"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/avd_sync_to_add_playlist" />
+
+        <ImageButton
+            android:id="@+id/button_Delete"
+            android:layout_width="@dimen/iconSizeNormal"
+            android:layout_height="@dimen/iconSizeNormal"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:onClick="OnButtonClick"
+            app:layout_constraintBottom_toBottomOf="@+id/button_AddToQueue"
+            app:layout_constraintEnd_toStartOf="@+id/button_Info"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_Add"
+            app:layout_constraintTop_toTopOf="@+id/button_AddToQueue"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/button_Info"
+            android:layout_width="@dimen/iconSizeNormal"
+            android:layout_height="@dimen/iconSizeNormal"
+            android:layout_marginEnd="32dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:onClick="OnButtonClick"
+            app:layout_constraintBottom_toBottomOf="@+id/button_AddToQueue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_Delete"
+            app:layout_constraintTop_toTopOf="@+id/button_AddToQueue"
+            app:srcCompat="@drawable/ic_info_black_24dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

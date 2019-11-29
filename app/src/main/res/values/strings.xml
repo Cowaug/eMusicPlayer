@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="shareTitle">shareTitle</string>
+    <string name="shareArtist">shareArtist</string>
+    <string name="sharePlayButton">sharePlayButton</string>
+    <string name="shareNextButton">shareNextButton</string>
+    <string name="sharePreviousButton">sharePreviousButton</string>
+    <string name="shareProgressBar">shareProgressBar</string>
+    <string name="shareSettingIcon">shareSettingIcon</string>
+    <string name="shareEqualizerIcon">shareEqualizerIcon</string>
+    <string name="shareHeader">shareHeader</string>
+    <string name="shareFooter">shareFooter</string>
+</resources>
