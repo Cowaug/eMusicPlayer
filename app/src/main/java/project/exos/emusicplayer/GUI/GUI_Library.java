@@ -780,6 +780,7 @@ public class GUI_Library extends AppCompatActivity {
         newSong = true;
     }
 
+
     public static void CallbackIconUpdate() {
         needIconUpdate = true;
     }

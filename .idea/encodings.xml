@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/beaglebuddy/id3/v23/frame_body/ID3v23FrameBodyUnsynchronizedLyrics.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/mpatric/beaglebuddy/id3/enums/Currency.java" charset="windows-1252" />
   </component>
 </project>
